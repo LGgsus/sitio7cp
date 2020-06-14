@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/estilosEval1.css">
+</head>
+<body>
+<div id="content">
+	<form action="p00_validada.php" method="post">
+	<table>
+		<tr>
+			<th colspan="2" class="titulo">Aplicación 1 - Validar con atributos HTML</th>
+		</tr>
+		<tr>
+			<td id="tdIzq">Seleccione CUALQUIER imagen (1 punto):</td>
+			<td id="tdDer"><input type="file" name="fileImagen" accept="image/*" value="" required></td>
+		</tr>
+		<tr>
+			<td id="tdIzq">Seleccione archivo *.DOCX (Word) (2 puntos):</td>
+			<td id="tdDer"><input type="file" name="filePDF" accept=".docx" value="" required></td>
+		</tr>
+		<tr>
+			<td id="tdIzq">Escribir tres números (2 puntos):</td>
+			<td id="tdDer"><input type="text" name="txtCorreo" pattern="[0-9]{3,3}"value="" required></td>
+		</tr>
+		<th colspan="2" class="subTitulo">
+			<input class="boton" type="submit" name="btnVer" value="Pasar">
+		</th>
+	</table>
+	</form>
+</div>
+</body>
+</html>
